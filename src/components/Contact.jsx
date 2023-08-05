@@ -7,7 +7,7 @@ import emailIcon from "../../public/images/email.png";
 import messageIcon from "../../public/images/message.png";
 
 const ContactSection = styled.section`
-  background-color: #f9f9f9;
+  background-color: #fff;
   padding: 80px;
   text-align: center;
 `;

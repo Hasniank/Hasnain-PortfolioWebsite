@@ -1,49 +1,68 @@
+// Services.js
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
-const ServicesSection = styled.section`
-  background-color: #f0f0f0;
-  padding: 80px 0;
+const bounceAnimation = keyframes`
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+`;
+
+const ServiceSection = styled.section`
+  /* Your existing styles for Service section */
+`;
+
+const ServiceContainer = styled.div`
+  display: flex;
   justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
 `;
 
-const ServicesTitle = styled.h2`
-  font-size: 30px;
-  margin-bottom: 20px;
-  color: #000;
+const ServiceCard = styled.div`
+  width: 200px;
+  padding: 20px;
+  margin: 20px;
   text-align: center;
-`;
-
-const ServiceItem = styled.div`
-  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: ${bounceAnimation} 1s ease-in-out; /* Apply the bounce animation */
 `;
 
 const ServiceTitle = styled.h3`
   font-size: 24px;
   margin-bottom: 10px;
-  color: #000;
-  text-align: center;
+  color: #333;
 `;
 
 const ServiceDescription = styled.p`
-  color: #000;
   font-size: 16px;
-  text-align: center;
+  color: #555;
 `;
 
 export const Services = () => {
   return (
-    <ServicesSection>
-      <ServicesTitle>Services</ServicesTitle>
-      <ServiceItem>
-        <ServiceTitle>Web Development</ServiceTitle>
-        <ServiceDescription>
-          I can create modern and responsive websites using the latest
-          technologies.
-        </ServiceDescription>
-      </ServiceItem>
-      {/* Add other service items here */}
-    </ServicesSection>
+    <ServiceSection>
+      <ServiceContainer>
+        <ServiceCard>
+          <ServiceTitle>Service 1</ServiceTitle>
+          <ServiceDescription>Description for Service 1</ServiceDescription>
+        </ServiceCard>
+        <ServiceCard>
+          <ServiceTitle>Service 2</ServiceTitle>
+          <ServiceDescription>Description for Service 2</ServiceDescription>
+        </ServiceCard>
+        <ServiceCard>
+          <ServiceTitle>Service 3</ServiceTitle>
+          <ServiceDescription>Description for Service 3</ServiceDescription>
+        </ServiceCard>
+      </ServiceContainer>
+    </ServiceSection>
   );
 };
