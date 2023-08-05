@@ -44,12 +44,6 @@ export const Services = () => {
         </ServiceDescription>
       </ServiceItem>
       {/* Add other service items here */}
-      <ServiceItem>
-        <ServiceTitle>Graphic Design</ServiceTitle>
-        <ServiceDescription>
-          I can design stunning graphics and illustrations for your projects.
-        </ServiceDescription>
-      </ServiceItem>
     </ServicesSection>
   );
 };

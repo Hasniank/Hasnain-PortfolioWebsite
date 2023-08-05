@@ -47,10 +47,8 @@ export const Footer = () => {
         </IconLink>
       </FooterIcons>
       <FooterText>
-        © {new Date().getFullYear()} Your Name. All rights reserved.
+        © {new Date().getFullYear()} HasnainKhan. All rights reserved.
       </FooterText>
     </FooterContainer>
   );
 };
-
-
