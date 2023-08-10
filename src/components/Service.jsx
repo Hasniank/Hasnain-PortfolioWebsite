@@ -15,6 +15,7 @@ const bounceAnimation = keyframes`
 
 const ServiceSection = styled.section`
   /* Your existing styles for Service section */
+  text-align: center;
 `;
 
 const ServiceContainer = styled.div`
@@ -38,6 +39,7 @@ const ServiceTitle = styled.h3`
   font-size: 20px;
   margin-bottom: 10px;
   color: #fff;
+  text-align: center;
 `;
 
 const ServiceDescription = styled.p`

@@ -52,9 +52,8 @@ const DownloadButton = styled.a`
 
 const SkillTitle = styled.h2`
   font-size: 36px;
-  margin-bottom: 20px;
   color: #fff;
-  margin-top: 20px;
+  margin-top: 40px;
 `;
 
 export const About = () => {
@@ -73,6 +72,7 @@ export const About = () => {
         <SkillItem>HTML/CSS</SkillItem>
         <SkillItem>JavaScript</SkillItem>
         <SkillItem>Firebase</SkillItem>
+        <SkillItem>GitHub</SkillItem>
         <SkillItem>Responsive Design</SkillItem>
       </SkillList>
       <DownloadButton href="/resume.pdf" download>

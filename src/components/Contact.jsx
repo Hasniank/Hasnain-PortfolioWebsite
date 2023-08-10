@@ -71,7 +71,7 @@ const FormButton = styled.button`
   transition: background-color 0.2s ease;
 
   &:hover {
-    background-color: #555;
+    background-color: #4caf50;
   }
 `;
 
