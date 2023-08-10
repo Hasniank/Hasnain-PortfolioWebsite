@@ -45,7 +45,8 @@ const DownloadButton = styled.a`
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: #555;
+    background-color: #4caf50;
+    color: #fff;
   }
 `;
 

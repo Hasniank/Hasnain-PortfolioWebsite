@@ -12,9 +12,7 @@ import { HashRouter as Router, Route, BrowserRouter } from "react-router-dom";
 
 
 const MainContainer = styled.main`
-  // max-width: 1200px;
-  // margin: 0 auto;
-  // padding: 20px;
+
 `;
 
 export const App = () => {
