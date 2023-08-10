@@ -1,13 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-// Import the images
-import userIcon from "../../public/images/user.png";
-import emailIcon from "../../public/images/email.png";
-import messageIcon from "../../public/images/message.png";
+// import userIcon from "../../public/images/user.png";
+// import emailIcon from "../../public/images/email.png";
+// import messageIcon from "../../public/images/message.png";
 
 const ContactSection = styled.section`
-  background-color: #fff;
+  // background-color: #fff;
   padding: 80px;
   text-align: center;
 `;
@@ -15,7 +14,7 @@ const ContactSection = styled.section`
 const ContactTitle = styled.h2`
   font-size: 36px;
   margin-bottom: 20px;
-  color: #333;
+  color: #fff;
 `;
 
 const ContactForm = styled.form`
@@ -28,12 +27,12 @@ const FormGroup = styled.div`
 `;
 
 const InputIcon = styled.img`
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
+  // position: absolute;
+  // top: 50%;
+  // left: 15px;
+  // transform: translateY(-50%);
+  // width: 20px;
+  // height: 20px;
 `;
 
 const FormInput = styled.input`
@@ -43,9 +42,8 @@ const FormInput = styled.input`
   border: 1px solid #ccc;
   border-radius: 4px;
   position: relative;
-  color:#FFF
-  &:focus {
-    border-color: #555;
+  color:#FFF &:focus {
+    border-color: #fff;
   }
 `;
 
@@ -64,7 +62,7 @@ const FormTextArea = styled.textarea`
 
 const FormButton = styled.button`
   padding: 12px 20px;
-  background-color: #333;
+  background-color: #194d33;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -83,15 +81,12 @@ export const Contact = () => {
       <ContactTitle>Contact Me</ContactTitle>
       <ContactForm>
         <FormGroup>
-          <InputIcon src={userIcon} alt="user" />
           <FormInput type="text" placeholder="Name" required />
         </FormGroup>
         <FormGroup>
-          <InputIcon src={emailIcon} alt="email" />
           <FormInput type="email" placeholder="Email" required />
         </FormGroup>
         <FormGroup>
-          <InputIcon src={messageIcon} alt="message" />
           <FormTextArea placeholder="Message" rows="6" required />
         </FormGroup>
         <FormButton type="submit">Send Message</FormButton>
@@ -99,5 +94,3 @@ export const Contact = () => {
     </ContactSection>
   );
 };
-
-

@@ -8,45 +8,29 @@ import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { Projects } from "./components/Projects";
 import { Profile } from "./components/Profile";
+import { HashRouter as Router, Route, BrowserRouter } from "react-router-dom";
 
-const AppContainer = styled.div`
-  /* Styles for the main app container */
-  ::-webkit-scrollbar {
-    display: none;
-  }
-`;
 const MainContainer = styled.main`
   // max-width: 1200px;
-  margin: 0 auto;
+  // margin: 0 auto;
   // padding: 20px;
 `;
 
 export const App = () => {
   return (
-    <>
-      <Navbar />
-      <MainContainer>
-        <Hero name="hero" />
-        <Profile />
-        <About name="about" />
-        <Services name="services" />
-        <Projects name="projects" />
-        <Contact name="contact" />
-      </MainContainer>
-      <Footer />
-    </>
+    <BrowserRouter>
+      <>
+        <Navbar />
+        <MainContainer>
+          <Hero />
+          <Profile />
+          <About />
+          <Services />
+          <Projects />
+          <Contact />
+        </MainContainer>
+        <Footer />
+      </>
+    </BrowserRouter>
   );
 };
-
-// <>
-// <Navbar />
-// <MainContainer>
-//   <Hero />
-//   <About />
-//   <Services />
-//   <Contact />
-//   <Projects />
-//   <Profile /> {/* Add the Profile component here */}
-// </MainContainer>
-// {/* Add the Footer component here */}
-// </>

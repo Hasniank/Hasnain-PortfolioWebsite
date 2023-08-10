@@ -1,9 +1,9 @@
-// Navbar.js
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
+import { Link } from "react-scroll";
 
 const NavbarContainer = styled.nav`
-  background-color: #333;
+  // background-color: #333;
   padding: 20px;
 `;
 
@@ -19,49 +19,52 @@ const NavItem = styled.li`
   margin: 0 10px;
 `;
 
-const NavLink = styled.button`
+const NavLink = styled(Link)`
   color: #fff;
-  background: none;
-  border: none;
-  font-size: 16px;
   cursor: pointer;
+  font-size: 16px;
   transition: opacity 0.3s;
 
   &:hover {
     opacity: 0.7;
-    text-decoration: underline;
   }
 `;
 
 export const Navbar = () => {
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <NavbarContainer>
       <NavList>
         <NavItem>
-          <NavLink onClick={() => scrollToSection('hero')}>Home</NavLink>
+          <NavLink to="hero" smooth={true} duration={500}>
+            Home
+          </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink onClick={() => scrollToSection('about')}>About</NavLink>
+          <NavLink to="about" smooth={true} duration={500} id="about">
+            About
+          </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink onClick={() => scrollToSection('services')}>Services</NavLink>
+          <NavLink to="services" smooth={true} duration={500} id="services">
+            Services
+          </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink onClick={() => scrollToSection('contact')}>Contact</NavLink>
+          <NavLink to="contact" smooth={true} duration={500} id="contact">
+            Contact
+          </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink onClick={() => scrollToSection('projects')}>Projects</NavLink>
+          <NavLink to="projects" smooth={true} duration={500} id="projects">
+            Projects
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink to="profile" smooth={true} duration={500}>
+            Profile
+          </NavLink>
         </NavItem>
       </NavList>
     </NavbarContainer>
   );
 };
-
-

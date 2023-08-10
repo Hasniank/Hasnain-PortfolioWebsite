@@ -22,15 +22,34 @@ a:hover {
 }
 * {
   margin: 0;
-  
 }
 body {
-  /* margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh; */
-  /* overflow: hidden; */
+  margin: 0;
+  padding: 0;
+  background-image: url("../public//images/Bkg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.root::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.root {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Add a transparent background for all components */
+section {
+  background-color: transparent;
 }
 
 h1 {

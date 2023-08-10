@@ -1,10 +1,9 @@
-// Profile.js
 import React from "react";
 import styled from "styled-components";
 import Image from "../../public/images/profile.png";
 
 const ProfileSection = styled.section`
-  background-color: #f9f9f9;
+  // background-color: #f9f9f9;
   //   padding: 100px 0;
   text-align: center;
   display: flex;
@@ -17,7 +16,7 @@ const ProfileSection = styled.section`
 const ProfileContainer = styled.div`
   width: 100%; /* Increase the width */
   height: 600px; /* Increase the height */
-  background-color: #fff;
+  // background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -36,12 +35,12 @@ const ProfileImage = styled.img`
 const ProfileName = styled.h3`
   font-size: 24px;
   margin-bottom: 10px;
-  color: #333;
+  color: #fff;
 `;
 
 const ProfileTitle = styled.p`
   font-size: 18px;
-  color: #555;
+  color: #fff;
 `;
 
 export const Profile = () => {

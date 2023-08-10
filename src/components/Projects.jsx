@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const ProjectsSection = styled.section`
-  background-color: #f9f9f9;
+  // background-color: #f9f9f9;
   padding: 80px;
   text-align: center;
 `;
@@ -10,7 +10,7 @@ const ProjectsSection = styled.section`
 const ProjectTitle = styled.h2`
   font-size: 36px;
   margin-bottom: 20px;
-  color: #333;
+  color: #fff;
 `;
 
 const ProjectList = styled.ul`
@@ -23,13 +23,13 @@ const ProjectList = styled.ul`
 
 const ProjectCard = styled.li`
   width: 300px;
-  background-color: #fff;
+  // background-color: #fff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 20px;
   margin: 20px;
   transition: transform 0.2s ease;
-
+   border: 1px solid #ccc;
   &:hover {
     transform: translateY(-5px);
   }
@@ -37,18 +37,18 @@ const ProjectCard = styled.li`
 
 const ProjectTitleLink = styled.a`
   font-size: 24px;
-  color: #333;
+  color: #fff;
   text-decoration: none;
   transition: color 0.2s ease;
 
   &:hover {
-    color: #555;
+    color: #fff;
   }
 `;
 
 const ProjectDescription = styled.p`
   font-size: 16px;
-  color: #555;
+  color: #fff;
   margin-top: 10px;
 `;
 

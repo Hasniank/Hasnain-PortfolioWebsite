@@ -1,4 +1,3 @@
-// Services.js
 import React from "react";
 import styled, { keyframes } from "styled-components";
 
@@ -38,12 +37,12 @@ const ServiceCard = styled.div`
 const ServiceTitle = styled.h3`
   font-size: 24px;
   margin-bottom: 10px;
-  color: #333;
+  color: #fff;
 `;
 
 const ServiceDescription = styled.p`
   font-size: 16px;
-  color: #555;
+  color: #fff;
 `;
 
 export const Services = () => {

@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const AboutSection = styled.section`
-  background-color: #f9f9f9;
+  // background-color: #f9f9f9;
   padding: 80px;
   text-align: center;
 `;
@@ -10,12 +10,12 @@ const AboutSection = styled.section`
 const AboutTitle = styled.h2`
   font-size: 36px;
   margin-bottom: 20px;
-  color: #333;
+  color: #fff;
 `;
 
 const AboutContent = styled.p`
   font-size: 18px;
-  color: #555;
+  color: #fff;
   line-height: 1.6;
 `;
 
@@ -29,10 +29,24 @@ const SkillItem = styled.li`
   display: inline-block;
   margin: 5px;
   padding: 8px 16px;
-  background-color: #333;
+  background-color: #194d33;
   color: #fff;
   border-radius: 4px;
   font-size: 14px;
+`;
+const DownloadButton = styled.a`
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #194d33;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #555;
+  }
 `;
 
 export const About = () => {
@@ -40,8 +54,9 @@ export const About = () => {
     <AboutSection>
       <AboutTitle>About Me</AboutTitle>
       <AboutContent>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut aliquet justo, eget congue nunc.
-        Etiam in felis nec neque facilisis fringilla. Nulla facilisi.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut
+        aliquet justo, eget congue nunc. Etiam in felis nec neque facilisis
+        fringilla. Nulla facilisi.
       </AboutContent>
       <SkillList>
         <SkillItem>Web Development</SkillItem>
@@ -51,8 +66,9 @@ export const About = () => {
         <SkillItem>UI/UX Design</SkillItem>
         <SkillItem>Responsive Design</SkillItem>
       </SkillList>
+      <DownloadButton href="/resume.pdf" download>
+        Download Resume
+      </DownloadButton>
     </AboutSection>
   );
 };
-
-

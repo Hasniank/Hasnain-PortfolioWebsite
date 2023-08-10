@@ -6,7 +6,7 @@ import githubIcon from "../../public/images/github.png";
 import linkedinIcon from "../../public/images/linkedin.png";
 
 const FooterContainer = styled.footer`
-  background-color: #333;
+  // background-color: #032E23;
   color: #fff;
   padding: 20px;
   text-align: center;
