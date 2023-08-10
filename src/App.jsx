@@ -10,6 +10,7 @@ import { Projects } from "./components/Projects";
 import { Profile } from "./components/Profile";
 import { HashRouter as Router, Route, BrowserRouter } from "react-router-dom";
 
+
 const MainContainer = styled.main`
   // max-width: 1200px;
   // margin: 0 auto;

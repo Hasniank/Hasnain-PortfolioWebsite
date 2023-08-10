@@ -10,7 +10,7 @@ const ProfileSection = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 500px; /* Increase the height */
+  height: 200px; /* Increase the height */
 `;
 
 const ProfileContainer = styled.div`

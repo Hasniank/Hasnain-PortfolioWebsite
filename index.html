@@ -6,18 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
     <style>
-      .root::-webkit-scrollbar {
+      .body::-webkit-scrollbar {
         display: none;
       }
-
-      /* Hide scrollbar for IE, Edge and Firefox */
-      .root {
+      .body {
         -ms-overflow-style: none; /* IE and Edge */
-        scrollbar-width: none; /* Firefox */
+        scrollbar-width: none;
       }
     </style>
   </head>
-  <body>
+  <body class="body">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

@@ -49,6 +49,13 @@ const DownloadButton = styled.a`
   }
 `;
 
+const SkillTitle = styled.h2`
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #fff;
+  margin-top: 20px;
+`;
+
 export const About = () => {
   return (
     <AboutSection>
@@ -58,12 +65,13 @@ export const About = () => {
         aliquet justo, eget congue nunc. Etiam in felis nec neque facilisis
         fringilla. Nulla facilisi.
       </AboutContent>
+      <SkillTitle>Skill</SkillTitle>
       <SkillList>
         <SkillItem>Web Development</SkillItem>
         <SkillItem>React.js</SkillItem>
         <SkillItem>HTML/CSS</SkillItem>
         <SkillItem>JavaScript</SkillItem>
-        <SkillItem>UI/UX Design</SkillItem>
+        <SkillItem>Firebase</SkillItem>
         <SkillItem>Responsive Design</SkillItem>
       </SkillList>
       <DownloadButton href="/resume.pdf" download>

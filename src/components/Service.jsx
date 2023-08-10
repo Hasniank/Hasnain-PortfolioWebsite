@@ -35,7 +35,7 @@ const ServiceCard = styled.div`
 `;
 
 const ServiceTitle = styled.h3`
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 10px;
   color: #fff;
 `;
@@ -50,12 +50,20 @@ export const Services = () => {
     <ServiceSection>
       <ServiceContainer>
         <ServiceCard>
-          <ServiceTitle>Service 1</ServiceTitle>
-          <ServiceDescription>Description for Service 1</ServiceDescription>
+          <ServiceTitle>React Native Development</ServiceTitle>
+          <ServiceDescription>
+            A skilled React Native developer proficient in building
+            cross-platform mobile apps using JavaScript, React, and native
+            components. Experience in UI/UX and performance optimization.
+          </ServiceDescription>
         </ServiceCard>
         <ServiceCard>
-          <ServiceTitle>Service 2</ServiceTitle>
-          <ServiceDescription>Description for Service 2</ServiceDescription>
+          <ServiceTitle>Front-End Development</ServiceTitle>
+          <ServiceDescription>
+            A Front-End developer creates engaging and user-friendly website
+            interfaces by coding HTML, CSS, and JavaScript, enhancing the user's
+            digital experience.
+          </ServiceDescription>
         </ServiceCard>
         <ServiceCard>
           <ServiceTitle>Service 3</ServiceTitle>
