@@ -17,6 +17,9 @@ const AboutContent = styled.p`
   font-size: 18px;
   color: #fff;
   line-height: 1.6;
+  width:200px
+  text-align: center;
+
 `;
 
 const SkillList = styled.ul`
@@ -61,9 +64,12 @@ export const About = () => {
     <AboutSection>
       <AboutTitle>About Me</AboutTitle>
       <AboutContent>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut
-        aliquet justo, eget congue nunc. Etiam in felis nec neque facilisis
-        fringilla. Nulla facilisi.
+        Experienced React Native developer adept at crafting dynamic and
+        user-friendly mobile applications. Proficient in leveraging React
+        Native's capabilities to deliver seamless cross-platform experiences.
+        Skilled in UI design, API integration, and optimizing app performance.
+        Passionate about creating innovative solutions to meet modern mobile
+        development challenges.
       </AboutContent>
       <SkillTitle>Skill</SkillTitle>
       <SkillList>

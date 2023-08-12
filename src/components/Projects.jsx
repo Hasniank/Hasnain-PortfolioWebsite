@@ -7,6 +7,10 @@ const ProjectsSection = styled.section`
   text-align: center;
 `;
 
+const ProjectContainer = styled.div`
+  /* Add your styles for the project container */
+`;
+
 const ProjectTitle = styled.h2`
   font-size: 36px;
   margin-bottom: 20px;
@@ -21,7 +25,7 @@ const ProjectList = styled.ul`
   justify-content: center;
 `;
 
-const ProjectCard = styled.li`
+const ProjectItem = styled.li`
   width: 300px;
   // background-color: #fff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -29,13 +33,13 @@ const ProjectCard = styled.li`
   padding: 20px;
   margin: 20px;
   transition: transform 0.2s ease;
-   border: 1px solid #ccc;
+  border: 1px solid #ccc;
   &:hover {
     transform: translateY(-5px);
   }
 `;
 
-const ProjectTitleLink = styled.a`
+const ProjectLink = styled.a`
   font-size: 24px;
   color: #fff;
   text-decoration: none;
@@ -46,40 +50,70 @@ const ProjectTitleLink = styled.a`
   }
 `;
 
+const ProjectImage = styled.img`
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+`;
 const ProjectDescription = styled.p`
-  font-size: 16px;
   color: #fff;
-  margin-top: 10px;
+`;
+
+const ProjectGitHubLink = styled.a`
+  color: #007bff; /* Change this color to match your design */
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #0056b3; /* Change this color to match hover effect */
+  }
 `;
 
 export const Projects = () => {
-  const projects = [
+  const projectData = [
     {
       title: "Project 1",
-      description: "A short description of Project 1.",
-      link: "https://github.com/your-username/project-1",
+      description: "This is portFolio website develop in React",
+      imageLink: "../../public/images/portFolio.png",
+      githubLink: "https://github.com/Hasniank/Hasnain-PortfolioWebsite",
     },
     {
       title: "Project 2",
-      description: "A short description of Project 2.",
-      link: "https://github.com/your-username/project-2",
+      description:
+        "This App is about to calculate the size of bra sizes and their article number and develop in React-Native",
+      imageLink: "../../public/images/icon.png",
+      githubLink: "https://github.com/Hasniank/MyBraSize",
     },
-    // Add more project objects as needed
+    // Add more projects as needed
   ];
 
   return (
-    <ProjectsSection>
-      <ProjectTitle>Projects</ProjectTitle>
-      <ProjectList>
-        {projects.map((project, index) => (
-          <ProjectCard key={index}>
-            <ProjectTitleLink href={project.link} target="_blank">
-              {project.title}
-            </ProjectTitleLink>
-            <ProjectDescription>{project.description}</ProjectDescription>
-          </ProjectCard>
-        ))}
-      </ProjectList>
+    <ProjectsSection id="projects">
+      <ProjectContainer>
+        <ProjectTitle>Projects</ProjectTitle>
+        <ProjectList>
+          {projectData.map((project, index) => (
+            <ProjectItem key={index}>
+              <ProjectLink
+                href={project.imageLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ProjectImage src={project.imageLink} alt={project.title} />
+              </ProjectLink>
+              <ProjectDescription>{project.description}</ProjectDescription>
+              <ProjectGitHubLink
+                href={project.githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub Link
+              </ProjectGitHubLink>
+            </ProjectItem>
+          ))}
+        </ProjectList>
+      </ProjectContainer>
     </ProjectsSection>
   );
 };
