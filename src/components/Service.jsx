@@ -31,7 +31,7 @@ const ServiceCard = styled.div`
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  animation: ${bounceAnimation} 1s ease-in-out; /* Apply the bounce animation */
+  animation: ${bounceAnimation} 1s ease-in-out; 
 `;
 
 const ServiceTitle = styled.h3`

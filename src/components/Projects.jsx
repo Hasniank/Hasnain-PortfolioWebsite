@@ -61,12 +61,12 @@ const ProjectDescription = styled.p`
 `;
 
 const ProjectGitHubLink = styled.a`
-  color: #007bff; /* Change this color to match your design */
+  color: #007bff; 
   text-decoration: none;
   transition: color 0.3s;
 
   &:hover {
-    color: #0056b3; /* Change this color to match hover effect */
+    color: #0056b3; 
   }
 `;
 
@@ -85,7 +85,7 @@ export const Projects = () => {
       imageLink: "../../public/images/icon.png",
       githubLink: "https://github.com/Hasniank/MyBraSize",
     },
-    // Add more projects as needed
+    
   ];
 
   return (

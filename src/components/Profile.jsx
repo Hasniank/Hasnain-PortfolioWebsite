@@ -10,12 +10,12 @@ const ProfileSection = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 200px; /* Increase the height */
+  height: 200px;
 `;
 
 const ProfileContainer = styled.div`
-  width: 100%; /* Increase the width */
-  height: 600px; /* Increase the height */
+  width: 100%;
+  height: 600px; 
   // background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);

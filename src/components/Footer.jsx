@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-// Import the images
+
 import githubIcon from "../../public/images/github.png";
 import linkedinIcon from "../../public/images/linkedin.png";
 
