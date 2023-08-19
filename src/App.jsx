@@ -8,13 +8,12 @@ import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { Projects } from "./components/Projects";
 import { Profile } from "./components/Profile";
-import { HashRouter as Router, Route, BrowserRouter } from "react-router-dom";
 
 const MainContainer = styled.main``;
 
 export const App = () => {
   return (
-    <BrowserRouter>
+    
       <>
         <Navbar />
 
@@ -29,6 +28,6 @@ export const App = () => {
         </MainContainer>
         <Footer />
       </>
-    </BrowserRouter>
+  
   );
 };

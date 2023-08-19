@@ -1,14 +1,6 @@
 import React, { useState, useRef } from "react";
 import styled from "styled-components";
-import { Link, animateScroll as scroll } from "react-scroll";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-
-// const scrollToBottom = () => {
-//   window.scrollTo({
-//     top: document.documentElement.scrollHeight,
-//     behavior: 'smooth',
-//   });
-// };
 
 const scrollToBottom = () => {
   window.scrollTo({
