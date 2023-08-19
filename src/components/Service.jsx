@@ -31,7 +31,12 @@ const ServiceCard = styled.div`
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  animation: ${bounceAnimation} 1s ease-in-out; 
+  animation: ${bounceAnimation} 1s ease-in-out;
+`;
+const ServicesTitle = styled.h2`
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #fff;
 `;
 
 const ServiceTitle = styled.h3`
@@ -40,7 +45,8 @@ const ServiceTitle = styled.h3`
   font-weight: bold !important;
   font-family: monospace;
   letter-spacing: 7px !important;
-  cursor: pointer;
+  cursor: pointer;import { Services } from './Service';
+
   text-transform: uppercase;
   // padding: 64px;
   background: linear-gradient(
@@ -73,6 +79,8 @@ const ServiceDescription = styled.p`
 export const Services = () => {
   return (
     <ServiceSection id="services">
+      <ServicesTitle> Services</ServicesTitle>
+
       <ServiceContainer>
         <ServiceCard>
           <ServiceTitle>React Native Development</ServiceTitle>

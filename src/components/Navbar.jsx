@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import styled from "styled-components";
-// import { Link } from "react-scroll";
 import { Link, animateScroll as scroll } from "react-scroll";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 // const scrollToBottom = () => {
 //   window.scrollTo({
@@ -31,18 +31,13 @@ const NavList = styled.ul`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  // @media (max-width: 768px) {
-  //   flex-direction: column;
-  //   align-items: center;
-  // }
 `;
 
 const NavItem = styled.li`
   margin: 0 10px;
 `;
 
-const NavLink = styled(Link)`
+const NavLink = styled(AnchorLink)`
   color: #fff;
   cursor: pointer;
   font-size: 16px;
