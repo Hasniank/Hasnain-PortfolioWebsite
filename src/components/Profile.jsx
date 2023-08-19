@@ -15,7 +15,7 @@ const ProfileSection = styled.section`
 
 const ProfileContainer = styled.div`
   width: 100%;
-  height: 600px; 
+  height: 600px;
   // background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -45,7 +45,7 @@ const ProfileTitle = styled.p`
 
 export const Profile = () => {
   return (
-    <ProfileSection>
+    <ProfileSection id="profile">
       <ProfileContainer>
         <ProfileImage src={Image} alt="Profile Image" />
         <ProfileName>Hasnain Khan</ProfileName>

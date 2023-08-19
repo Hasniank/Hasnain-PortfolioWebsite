@@ -66,7 +66,7 @@ text-transform: uppercase;
 
 export const Hero = () => {
   return (
-    <HeroSection>
+    <HeroSection id="hero">
       <HeroTitle>Welcome to My Portfolio</HeroTitle>
       <HeroSubtitle>Discover my work and skills</HeroSubtitle>
     </HeroSection>

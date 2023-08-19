@@ -10,22 +10,21 @@ import { Projects } from "./components/Projects";
 import { Profile } from "./components/Profile";
 import { HashRouter as Router, Route, BrowserRouter } from "react-router-dom";
 
-
-const MainContainer = styled.main`
-
-`;
+const MainContainer = styled.main``;
 
 export const App = () => {
   return (
     <BrowserRouter>
       <>
         <Navbar />
+
         <MainContainer>
           <Hero />
           <Profile />
           <About />
           <Services />
           <Projects />
+
           <Contact />
         </MainContainer>
         <Footer />

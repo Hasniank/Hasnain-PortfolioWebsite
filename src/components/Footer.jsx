@@ -34,7 +34,7 @@ const FooterText = styled.p`
 
 export const Footer = () => {
   return (
-    <FooterContainer>
+    <FooterContainer id="footer">
       <FooterIcons>
         <IconLink href="https://github.com/Hasniank" target="_blank">
           <IconImage src={githubIcon} alt="GitHub" />

@@ -10,8 +10,17 @@
         display: none;
       }
       .body {
-        -ms-overflow-style: none; /* IE and Edge */
-        scrollbar-width: none;
+        /* -ms-overflow-style: none; */
+        /* scrollbar-width: none; */
+      }
+
+      .body {
+        scroll-behavior: smooth;
+      }
+      /* In your global styles or a suitable CSS file */
+      html,
+      body {
+        scroll-behavior: smooth;
       }
     </style>
   </head>

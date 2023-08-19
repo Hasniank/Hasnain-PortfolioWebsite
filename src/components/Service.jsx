@@ -72,7 +72,7 @@ const ServiceDescription = styled.p`
 
 export const Services = () => {
   return (
-    <ServiceSection>
+    <ServiceSection id="services">
       <ServiceContainer>
         <ServiceCard>
           <ServiceTitle>React Native Development</ServiceTitle>

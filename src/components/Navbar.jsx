@@ -1,6 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import styled from "styled-components";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
+
+// const scrollToBottom = () => {
+//   window.scrollTo({
+//     top: document.documentElement.scrollHeight,
+//     behavior: 'smooth',
+//   });
+// };
+
+const scrollToBottom = () => {
+  window.scrollTo({
+    top: document.documentElement.scrollHeight,
+    behavior: "smooth",
+  });
+};
 
 const NavbarContainer = styled.nav`
   padding: 20px;
@@ -17,20 +32,22 @@ const NavList = styled.ul`
   justify-content: center;
   align-items: center;
 
-  @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: center;
-  }
+  // @media (max-width: 768px) {
+  //   flex-direction: column;
+  //   align-items: center;
+  // }
 `;
 
-const NavItem = styled.li``;
+const NavItem = styled.li`
+  margin: 0 10px;
+`;
 
 const NavLink = styled(Link)`
   color: #fff;
   cursor: pointer;
   font-size: 16px;
+  text-decoration: none;
   transition: opacity 0.3s;
-  margin: 10px;
 
   &:hover {
     opacity: 0.7;
@@ -42,37 +59,21 @@ export const Navbar = () => {
     <NavbarContainer>
       <NavList>
         <NavItem>
-          <NavLink to="hero" smooth={true} duration={500}>
-            Home
-          </NavLink>
+          <NavLink href="#about">About</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink to="about" smooth={true} duration={500} id="about">
-            About
-          </NavLink>
+          <NavLink href="#services">Services</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink to="services" smooth={true} duration={500} id="services">
-            Services
-          </NavLink>
+          <NavLink href="#contact">Contact</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink to="contact" smooth={true} duration={500} id="contact">
-            Contact
-          </NavLink>
+          <NavLink href="#projects">Projects</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink to="projects" smooth={true} duration={500} id="projects">
-            Projects
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink to="profile" smooth={true} duration={500}>
-            Profile
-          </NavLink>
+          <NavLink href="#profile">Profile</NavLink>
         </NavItem>
       </NavList>
     </NavbarContainer>
   );
 };
-

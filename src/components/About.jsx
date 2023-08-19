@@ -61,7 +61,7 @@ const SkillTitle = styled.h2`
 
 export const About = () => {
   return (
-    <AboutSection>
+    <AboutSection id="about">
       <AboutTitle>About Me</AboutTitle>
       <AboutContent>
         Experienced React Native developer adept at crafting dynamic and
