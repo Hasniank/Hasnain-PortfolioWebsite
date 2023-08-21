@@ -12,9 +12,29 @@ const ContactSection = styled.section`
 const ContactContainer = styled.div``;
 
 const ContactTitle = styled.h2`
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #fff;
+color: hsl(150, 0%, 100%);
+font-size: 30px!important;
+font-weight: bold!important;
+font-family: monospace;
+letter-spacing: 7px!important;
+cursor: pointer;
+text-transform: uppercase;
+// padding: 64px;
+  background: linear-gradient(to right, hsl(150, 0%, 100%) 0, hsl(0, 0%, 30%) 10%, hsl(150, 0%, 100%) 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  @keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 600px;
+    }
+    100% {
+      background-position: 600px;
+    }
+  }
 `;
 
 const ContactForm = styled.form`
