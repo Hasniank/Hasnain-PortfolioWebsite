@@ -48,7 +48,7 @@ const ServiceTitle = styled.h3`
   cursor: pointer;import { Services } from './Service';
 
   text-transform: uppercase;
-  // padding: 64px;
+  
   background: linear-gradient(
     to right,
     hsl(150, 0%, 100%) 0,
@@ -80,7 +80,6 @@ export const Services = () => {
   return (
     <ServiceSection id="services">
       <ServicesTitle> Services</ServicesTitle>
-
       <ServiceContainer>
         <ServiceCard>
           <ServiceTitle>React Native Development</ServiceTitle>

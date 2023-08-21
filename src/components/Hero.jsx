@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 const HeroSection = styled.section`
   background-color: transparent; 
-  // padding: 100px 0;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -20,7 +19,6 @@ font-family: monospace;
 letter-spacing: 2px!important;
 cursor: pointer;
 text-transform: uppercase;
-// padding: 24px;
   background: linear-gradient(to right, hsl(150, 0%, 100%) 0, hsl(0, 0%, 30%) 10%, hsl(150, 0%, 100%) 20%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -46,7 +44,6 @@ font-family: monospace;
 letter-spacing: 7px!important;
 cursor: pointer;
 text-transform: uppercase;
-// padding: 64px;
   background: linear-gradient(to right, hsl(150, 0%, 100%) 0, hsl(0, 0%, 30%) 10%, hsl(150, 0%, 100%) 20%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

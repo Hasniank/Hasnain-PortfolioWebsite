@@ -13,21 +13,17 @@ const MainContainer = styled.main``;
 
 export const App = () => {
   return (
-    
-      <>
-        <Navbar />
-
-        <MainContainer>
-          <Hero />
-          <Profile />
-          <About />
-          <Services />
-          <Projects />
-
-          <Contact />
-        </MainContainer>
-        <Footer />
-      </>
-  
+    <>
+      <Navbar />
+      <MainContainer>
+        <Hero />
+        <Profile />
+        <About />
+        <Services />
+        <Projects />
+        <Contact />
+      </MainContainer>
+      <Footer />
+    </>
   );
 };

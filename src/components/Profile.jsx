@@ -3,8 +3,6 @@ import styled from "styled-components";
 import Image from "../../public/images/profile.png";
 
 const ProfileSection = styled.section`
-  // background-color: #f9f9f9;
-  //   padding: 100px 0;
   text-align: center;
   display: flex;
   flex-direction: column;

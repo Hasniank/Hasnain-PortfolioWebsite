@@ -1,12 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-
 import githubIcon from "../../public/images/github.png";
 import linkedinIcon from "../../public/images/linkedin.png";
 
 const FooterContainer = styled.footer`
-  // background-color: #032E23;
   color: #fff;
   padding: 20px;
   text-align: center;

@@ -19,7 +19,7 @@ font-family: monospace;
 letter-spacing: 7px!important;
 cursor: pointer;
 text-transform: uppercase;
-// padding: 64px;
+
   background: linear-gradient(to right, hsl(150, 0%, 100%) 0, hsl(0, 0%, 30%) 10%, hsl(150, 0%, 100%) 20%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

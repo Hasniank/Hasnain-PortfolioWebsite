@@ -2,13 +2,6 @@ import React, { useState, useRef } from "react";
 import styled from "styled-components";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
-const scrollToBottom = () => {
-  window.scrollTo({
-    top: document.documentElement.scrollHeight,
-    behavior: "smooth",
-  });
-};
-
 const NavbarContainer = styled.nav`
   padding: 20px;
 
