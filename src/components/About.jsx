@@ -79,6 +79,9 @@ export const About = () => {
         <SkillItem>Firebase</SkillItem>
         <SkillItem>GitHub</SkillItem>
         <SkillItem>Responsive Design</SkillItem>
+        <SkillItem>RestFul Api</SkillItem>
+        <SkillItem>Context Api</SkillItem>
+        <SkillItem>Android Development</SkillItem>
       </SkillList>
       <DownloadButton href="../../public/Resume/HasnainkhanResume.pdf" download>
         Download Resume
