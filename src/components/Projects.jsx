@@ -3,6 +3,8 @@ import styled from "styled-components";
 
 import portFolioImage from "../../public/images/portFolio.png";
 import IconImage from "../../public/images/icon.png";
+import AICourse  from "../../public/images/AICourse .png"
+import DigitalCounter from "../../public/images/DigitalCounter.png"
 
 const ProjectsSection = styled.section`
   padding: 80px;
@@ -107,6 +109,20 @@ export const Projects = () => {
         "This App is about to calculate the size of bra sizes and their article number and develop in React-Native",
       image: IconImage,
       githubLink: "https://github.com/your-username/project2",
+    },
+    {
+      title: "Project 3",
+      description:
+        " Transform your learning experience with the AI Course Generator & Creator Unlock the potential of artificial intelligence with our cutting-edge tool, AI Course Generator! Whether you're a beginner or an expert, this groundbreaking tool revolutionizes the course creation process, ensuring accessible and efficient learning.",
+      image: AICourse,
+      githubLink: "https://play.google.com/store/apps/details?id=com.ford9.courseai.generator.creator.maker.online.syllabus&hl=en&gl=US",
+    },
+    {
+      title: "Project 4",
+      description:
+        " Here is the Ultimate Digital Tally Counter: Digital Counter: Tasbih | Zikr An Essential Ramadan CompanionAre you in search of a versatile and feature-packed digital counter for your Tasbih (prayer beads) practice? Look no further! Our Digital Counter: Tasbih | Zikr App is meticulously designed to provide you with a seamless and spiritually enriching experience, whether you're new to Tasbih or someone with ample experience.",
+      image: DigitalCounter,
+      githubLink: "https://play.google.com/store/apps/details?id=com.ford9.digital.tally.counter.dhikr.tasbeeh&hl=en&gl=US",
     },
   ];
 
