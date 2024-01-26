@@ -80,7 +80,7 @@ export const About = () => {
         <SkillItem>GitHub</SkillItem>
         <SkillItem>Responsive Design</SkillItem>
       </SkillList>
-      <DownloadButton href="/resume.pdf" download>
+      <DownloadButton href="../../public/Resume/HasnainkhanResume.pdf" download>
         Download Resume
       </DownloadButton>
     </AboutSection>
